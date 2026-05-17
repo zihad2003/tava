@@ -98,7 +98,7 @@ export default function Menu() {
           <div>
             <h3 className="font-serif text-xl text-brown mb-1">Dine-in · Kerbside Pickup · No-contact Delivery</h3>
             <p className="font-sans text-sm text-body/70">
-              Enjoy Kuisine your way — at our table, from your car, or delivered straight to your door.
+              Enjoy Tava your way — at our table, from your car, or delivered straight to your door.
             </p>
           </div>
           <div>

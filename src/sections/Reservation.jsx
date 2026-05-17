@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 
 export default function Reservation() {
-  const waLink = "https://wa.me/?text=Hi%20Kuisine!%20I%27d%20like%20to%20reserve%20a%20table.";
+  const waLink = "https://wa.me/8801729298282?text=Hi%20Tava!%20I%27d%20like%20to%20reserve%20a%20table.";
 
   return (
     <section id="reservation" className="relative py-20 md:py-28 px-4 md:px-6 overflow-hidden bg-teal">
@@ -37,13 +37,13 @@ export default function Reservation() {
             <Button variant="primary" href={waLink}>
               Reserve via WhatsApp
             </Button>
-            <Button variant="outline" href="https://maps.google.com/?q=Kuisine+3+No+Road+Zakir+Hossain+Rd+Chattogram">
+            <Button variant="outline" href="https://maps.google.com/?q=Tava+Restaurant+Arcadia+Shopping+Complex+Chittagong">
               Get Directions
             </Button>
           </div>
 
           <p className="font-sans text-cream/50 text-xs mt-8">
-            3 No Road, Zakir Hossain Rd, Chattogram 4000
+            Arcadia Shopping Complex, 4th Floor #4, Zakir Hossain Road, South Khulshi, Chittagong
           </p>
         </motion.div>
       </div>

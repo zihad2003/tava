@@ -47,7 +47,7 @@ export default function GalleryScroll() {
             >
               <img
                 src={src}
-                alt={`Kuisine food ${(idx % PHOTOS.length) + 1}`}
+                alt={`Tava food ${(idx % PHOTOS.length) + 1}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />

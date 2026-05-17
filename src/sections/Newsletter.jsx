@@ -20,7 +20,7 @@ export default function Newsletter() {
           Stay Connected
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-brown mb-3">
-          Join the Kuisine Family
+          Join the Tava Family
         </h2>
         <p className="font-sans text-sm text-body/70 mb-8">
           Get updates on new menu items, special events, and exclusive offers — straight to your inbox.
@@ -30,7 +30,7 @@ export default function Newsletter() {
           <div className="bg-teal/10 border border-teal/20 rounded-2xl px-8 py-6">
             <p className="font-serif text-lg text-teal">You're in!</p>
             <p className="font-sans text-sm text-body/70 mt-1">
-              Welcome to the Kuisine family. We'll be in touch soon.
+              Welcome to the Tava family. We'll be in touch soon.
             </p>
           </div>
         ) : (

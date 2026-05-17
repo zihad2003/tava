@@ -21,7 +21,7 @@ export default function Happenings() {
             Events & Specials
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-brown">
-            What's On at Kuisine
+            What's On at Tava
           </h2>
         </div>
 

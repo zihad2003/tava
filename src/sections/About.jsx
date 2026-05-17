@@ -17,7 +17,7 @@ export default function About() {
         >
           <img
             src="/restaurant-interior.jpg"
-            alt="Kuisine restaurant"
+            alt="Tava restaurant"
             className="w-full h-[480px] object-cover rounded-2xl shadow-lg"
           />
         </motion.div>
@@ -42,16 +42,14 @@ export default function About() {
 
           {/* First paragraph — hidden on mobile */}
           <p className="hidden md:block font-sans text-body/80 text-base leading-relaxed mb-4">
-            Nestled on Zakir Hossain Road in the heart of Chattogram, Kuisine was born from
-            a passion for authentic Asian cuisine. From the smoky char of Korean BBQ to the
-            delicate art of Pan Asian dishes and the bold spices of Porto Afro cuisine —
-            we bring the best of the continent to your table.
+            Nestled on Zakir Hossain Road in South Khulshi, Tava was established in 1993, born from
+            a passion for authentic multi-cuisine dining. From savory sizzling dishes and fiery Thai seafood
+            to perfectly seasoned Asian specialties — we bring an elite dining experience to Chittagong.
           </p>
 
           <p className="font-sans text-body/80 text-base leading-relaxed mb-8">
-            Whether you're gathering over a Fisherman's Platter, sharing a Bento Box, or
-            indulging in a Sushi Night — Kuisine is where every visit becomes a journey
-            across Asia.
+            Whether you're gathering for a family feast, sharing a platter of signature Thai Calamari, or
+            savoring our famous Crispy Shredded Beef — Tava is where every meal becomes a memorable celebration.
           </p>
 
           {/* Highlights pills */}

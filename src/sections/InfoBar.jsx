@@ -10,7 +10,7 @@ export default function InfoBar() {
       icon: MapPin,
       label: "address",
       lines: [site.address, site.country],
-      href: "https://maps.google.com/?q=Kuisine+3+No+Road+Zakir+Hossain+Rd+Chattogram",
+      href: "https://maps.google.com/?q=Tava+Restaurant+Arcadia+Shopping+Complex+Chittagong",
     },
     {
       icon: Clock,
