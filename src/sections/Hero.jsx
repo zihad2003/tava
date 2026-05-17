@@ -15,63 +15,48 @@ const HERO_SLIDES = [
 export default function Hero() {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  // Automatic slideshow transitions every 2 seconds
+  // Automatic slideshow transitions every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setSlideIndex((prev) => (prev + 1) % HERO_SLIDES.length);
-    }, 2000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section className="relative min-h-[800px] lg:h-screen flex items-center bg-teal pt-28 pb-16 lg:py-0 px-4 md:px-8 lg:px-16 overflow-hidden">
+    <section className="relative min-h-[750px] lg:h-screen flex items-center bg-teal pt-28 pb-16 lg:py-0 px-4 md:px-8 lg:px-16 overflow-hidden">
       
       {/* Decorative Grid Patterns in Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(212,175,55,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(212,175,55,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full filter blur-[100px] pointer-events-none" />
 
-      {/* Main Grid Container — with robust top margin (lg:mt-24) to resolve navbar overlapping */}
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10 lg:mt-24">
+      {/* Main Grid Container — with robust top margin (lg:mt-20) to resolve navbar overlapping */}
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10 lg:mt-20">
         
-        {/* LEFT COLUMN: Brand Heading, Buttons & Bottom Nested Card */}
-        <div className="lg:col-span-5 flex flex-col justify-center space-y-6 md:space-y-8 text-left">
+        {/* LEFT COLUMN: Minimal Brand Heading, Buttons & Bottom Nested Card */}
+        <div className="lg:col-span-5 flex flex-col justify-center space-y-6 md:space-y-7 text-left">
           
-          {/* Logo with gold drop shadow */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="self-start"
-          >
-            <img
-              src="/logo.png"
-              alt="Tava Logo"
-              className="h-16 md:h-20 w-auto object-contain filter drop-shadow-[0_4px_10px_rgba(212,175,55,0.35)]"
-            />
-          </motion.div>
-
           {/* Heading */}
           <div className="space-y-3">
             <motion.h1
-              className="font-serif text-cream text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide"
+              className="font-serif text-cream text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight tracking-wide"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              A Platter Fit<br />
-              for Royalty,<br />
+              A Platter Fit for Royalty,<br />
               <span className="text-gold font-medium italic">Flavors Rich with History</span>
             </motion.h1>
           </div>
 
-          {/* Subtitle */}
+          {/* Subtitle (Minimal & Elegant) */}
           <motion.p
-            className="font-sans text-cream/80 text-sm md:text-base leading-relaxed max-w-lg"
+            className="font-sans text-cream/75 text-sm md:text-base leading-relaxed max-w-md tracking-wide"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Experience our signature Mughlai Grand Platters, sizzling lamb chops, live grills, and wok-fresh Pan-Asian specialties crafted to absolute perfection.
+            Signature Mughlai Grand Platters, Sizzling Grills &amp; Pan-Asian Cuisine.
           </motion.p>
 
           {/* Action Buttons */}
@@ -191,16 +176,6 @@ export default function Hero() {
         </div>
 
       </div>
-
-      {/* Elegant Scroll Indicator */}
-      <motion.div
-        className="hidden md:flex flex-col items-center absolute bottom-8 left-12 z-20"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-      >
-        <span className="text-gold/50 text-[10px] tracking-[0.3em] uppercase mb-2">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-gold/50 to-transparent" />
-      </motion.div>
     </section>
   );
 }
