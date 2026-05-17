@@ -6,14 +6,14 @@ export default function Hero() {
     <section className="relative h-screen min-h-[620px] overflow-hidden bg-teal">
       {/* Background image */}
       <img src="/Hero.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-teal/60" />
+      <div className="absolute inset-0 bg-teal/70" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
         <motion.img
-          src="/logo.jpg"
+          src="/logo.png"
           alt="Kuisine"
-          className="h-20 w-auto object-contain rounded-lg mb-4"
+          className="h-20 w-auto object-contain mb-4"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}

@@ -21,14 +21,14 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="footer-contact" className="bg-brown text-cream/80 pt-14 pb-8 px-4 md:px-6">
+    <footer id="footer-contact" className="bg-[#6B1A2B] text-cream/80 pt-14 pb-8 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         {/* 4-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12 text-center sm:text-left">
 
           {/* Col 1 — Brand + socials */}
           <div className="flex flex-col items-center sm:items-start">
-            <img src="/logo.jpg" alt="Kuisine" className="h-14 w-auto object-contain rounded-sm mb-3" />
+            <img src="/logo.png" alt="Kuisine" className="h-14 w-auto object-contain mb-3" />
             <p className="font-sans text-xs text-cream/50 uppercase tracking-widest mb-4">{site.tagline}</p>
             <p className="font-sans text-sm text-cream/60 leading-relaxed mb-6">
               Pan Asian, Korean BBQ, Seafood and Porto Afro cuisine — a world of flavors in the heart of Chattogram.

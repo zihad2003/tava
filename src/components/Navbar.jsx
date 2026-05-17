@@ -90,7 +90,7 @@ export default function Navbar() {
             to="/"
             className="lg:absolute lg:left-1/2 lg:-translate-x-1/2"
           >
-            <img src="/logo.jpg" alt="Kuisine" className="h-10 w-auto object-contain rounded-sm" />
+            <img src="/logo.png" alt="Kuisine" className="h-10 w-auto object-contain" />
           </Link>
 
           {/* RIGHT links + Reserve — desktop */}

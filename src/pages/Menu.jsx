@@ -35,8 +35,8 @@ export default function Menu() {
     <>
       {/* Page hero */}
       <div className="relative bg-teal h-56 md:h-64 pt-20 flex items-end pb-0 overflow-hidden">
-        <img src="/Banner.jpg" alt="" aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-20" />
+        <img src="/Hero.jpg" alt="" aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-30" />
         <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pb-8 text-center">
           <p className="font-sans text-xs uppercase tracking-widest text-gold font-semibold mb-2">
             {site.name} · {site.tagline}
@@ -73,7 +73,7 @@ export default function Menu() {
               <div className="space-y-14">
                 {subcategories.map((sub) => (
                   <div key={sub}>
-                    <h3 className="font-serif text-2xl text-brown border-b-2 border-gold pb-2 mb-6">
+                    <h3 className="font-serif text-2xl text-brown border-b-2 border-gold-dark pb-2 mb-6">
                       {sub}
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
