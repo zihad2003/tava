@@ -1,0 +1,65 @@
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-teal: #0d5e5e;
+  --color-teal-dark: #0a4a4a;
+  --color-teal-light: #1a7a7a;
+  --color-gold: #c9a84c;
+  --color-gold-dark: #a8872e;
+  --color-gold-light: #dfc06e;
+  --color-cream: #fdfbf7;
+  --color-cream-dark: #f0ebe0;
+  --color-brown: #3b1f0e;
+  --color-body: #333333;
+
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* ── Infinite marquee scroll ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+    color: #333333;
+    background-color: #fdfbf7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  #root {
+    width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
